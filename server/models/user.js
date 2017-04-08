@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: (models) => {
         User.hasMany(models.Subscription, {
-          foreignKey: 'subscriptionId',
+          foreignKey: 'userId',
           as: 'subscriptions',
         })
       }
